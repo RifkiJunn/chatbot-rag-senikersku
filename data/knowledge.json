@@ -1,0 +1,28 @@
+{
+  "shop": {
+    "name": "Senikersku",
+    "url": "https://shopee.co.id/senikersku",
+    "whatsapp": "628123456789"
+  },
+  "keywords": {
+    "cara pesan": "cara pesan",
+    "cara order": "cara pesan",
+    "cara beli": "cara pesan",
+    "checkout": "cara pesan",
+    "pengiriman": "pengiriman",
+    "ongkir": "pengiriman",
+    "kirim dari": "pengiriman",
+    "retur": "retur",
+    "tukar size": "retur",
+    "original": "original",
+    "kontak": "kontak",
+    "admin": "kontak"
+  },
+  "responses": {
+    "cara pesan": "Cara pesan: 1) Pilih produk di website/katalog ini, 2) klik tombol *Beli di Shopee*, 3) pilih ukuran & checkout di aplikasi Shopee. Pembayaran dan pengiriman diproses aman oleh Shopee.",
+    "pengiriman": "Pengiriman dilakukan melalui ekspedisi yang tersedia di Shopee. Ongkir dan estimasi tiba bisa dilihat langsung di halaman checkout Shopee sesuai alamat kamu.",
+    "retur": "Pengembalian/penukaran barang mengikuti kebijakan Pengembalian Barang & Dana Shopee. Pastikan merekam video unboxing ya.",
+    "original": "Detail keaslian dan kondisi produk tercantum di deskripsi masing-masing produk di halaman Shopee. Silakan cek link produk yang kami berikan.",
+    "kontak": "Kamu bisa menghubungi Senikersku lewat fitur *Chat* di toko Shopee: https://shopee.co.id/senikersku , atau lewat chat WhatsApp ini."
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senikersku — Katalog Sneakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <span class="logo">SENIKERS<b>KU</b></span>
+      <a class="btn-outline" id="shopLink" href="https://shopee.co.id/senikersku" target="_blank" rel="noopener">Kunjungi Toko Shopee ↗</a>
+    </nav>
+    <div class="hero-body">
+      <p class="eyebrow">Katalog resmi lapak Shopee</p>
+      <h1>Langkah keren<br>mulai dari sini.</h1>
+      <p class="sub">Telusuri <span id="count">…</span> produk Senikersku, atau tanya asisten AI kami untuk rekomendasi sesuai budget.</p>
+      <div class="hero-cta">
+        <button class="btn" onclick="openChat()">💬 Tanya Asisten AI</button>
+        <a class="btn-wa" id="waLink" target="_blank" rel="noopener">Chat via WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Cari sepatu, sandal, merek…">
+      <select id="sort">
+        <option value="">Urutkan</option>
+        <option value="murah">Harga terendah</option>
+        <option value="mahal">Harga tertinggi</option>
+        <option value="laris">Terlaris</option>
+      </select>
+    </div>
+    <div id="cats" class="cats"></div>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer>Data produk di-scrape dari <a href="https://shopee.co.id/senikersku" target="_blank" rel="noopener">shopee.co.id/senikersku</a> · Tugas Praktikum AI — Chatbot RAG</footer>
+
+  <!-- Chat widget -->
+  <button id="fab" onclick="openChat()" aria-label="Buka chat">💬</button>
+  <section id="chat" hidden>
+    <div class="chat-head">
+      <div><b>Asisten Senikersku</b><small>RAG • jawaban dari katalog toko</small></div>
+      <button onclick="closeChat()" aria-label="Tutup">✕</button>
+    </div>
+    <div id="msgs"></div>
+    <div class="chips">
+      <button>Sepatu termurah apa?</button>
+      <button>Rekomendasi di bawah 300 ribu</button>
+      <button>Produk terlaris</button>
+    </div>
+    <form id="chatForm">
+      <input id="chatInput" autocomplete="off" placeholder="Tulis pertanyaan…">
+      <button>Kirim</button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
